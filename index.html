@@ -444,14 +444,17 @@
       </div>
       <div class="card">
         <h3 style="margin:0 0 10px">Quick enquiry form</h3>
-        <form class="form" action="https://formsubmit.co/info@backbonefibre.com" method="POST">
+        <form class="form" action="https://formsubmit.co/enquiry@backbonefibre.com" method="POST">
+          <input type="hidden" name="_subject" value="BackboneFibre Website Enquiry">  
+          <input type="hidden" name="_captcha" value="false">
           <input name="Name" placeholder="Your name" required />
           <input name="Company" placeholder="Company" />
           <input name="Email" type="email" placeholder="Email" required />
           <input name="Site Location" placeholder="Site location (town/city)" />
-          <textarea name="Scope" placeholder="Scope (e.g., fibre pulls, splicing, OTDR testing, MPO/MTP, remediation)"></textarea>
+          <textarea name="Scope"
+            placeholder="Scope (e.g., fibre pulls, splicing, OTDR testing, MPO/MTP, remediation)">
+          </textarea>
           <button class="btn primary" type="submit">Send</button>
-          <div class="note">Note: This opens your email client. If you prefer, email us directly with the details.</div>
         </form>
       </div>
     </div>
