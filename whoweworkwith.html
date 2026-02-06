@@ -243,7 +243,58 @@ footer{
   }
 
 }
+/* ===== Mobile header fixes ===== */
+@media (max-width: 768px){
 
+  /* Allow header content to wrap instead of cutting off */
+  .nav{
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+  }
+
+  /* Reduce overall padding so everything fits */
+  .wrap{
+    padding: 14px;
+  }
+
+  /* Make logo smaller so it doesn't get clipped */
+  .logoimg{
+    height: 44px !important;
+    width: auto !important;
+    display: block;
+  }
+
+  /* Put logo + contact button on first row */
+  .brand{
+    margin-right: 0;
+    flex: 1;
+  }
+
+  .cta{
+    margin-left: 0;
+  }
+
+  /* Move nav to its own row */
+  nav{
+    order: 3;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* Allow menu items to wrap to next line */
+  .nav ul{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  /* Tighten menu link sizing */
+  .nav ul a{
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
 </style>
 </head>
 
@@ -473,3 +524,4 @@ document.getElementById("year").textContent =
 
 </body>
 </html>
+
