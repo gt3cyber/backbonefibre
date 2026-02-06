@@ -320,6 +320,20 @@
     font-size: 14px;
   }
 }
+/* Prevent long menu items from wrapping */
+.nav li{
+  white-space: nowrap;
+}
+
+@media (max-width: 768px){
+
+  /* Slightly shrink menu text on mobile */
+  .nav ul a{
+    font-size: 13px !important;
+    padding: 7px 8px !important;
+  }
+
+}
 </style>
 </head>
 <body>
